@@ -1,6 +1,6 @@
 const arg = process.argv[2];
 
-if (!arg) {
+if (arg === undefined) {
     console.log('No argument');
 } else {
     function factorial(x) {
@@ -12,4 +12,5 @@ if (!arg) {
 
     console.log(factorial(arg));
 }
+
 
